@@ -22,7 +22,7 @@ function extractFeedsFromOPML(opmlPath) {
 }
 
 // 检查单个 URL 是否可访问
-function checkUrl(url, timeout = 20000) {
+function checkUrl(url, timeout = 30000) {
   return new Promise((resolve) => {
     const protocol = url.startsWith('https') ? https : http;
     
