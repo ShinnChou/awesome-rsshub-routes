@@ -107,11 +107,12 @@ jobs:
         id: email
         run: |
           if [ -f feed-status.json ]; then
-            TOTAL=$(cat feed-status.json | grep -o '"total":[0-9]*' | grep -o '[0-9]*')
-            VALID=$(cat feed-status.json | grep -o '"valid":[0-9]*' | grep -o '[0-9]*')
-            INVALID=$(cat feed-status.json | grep -o '"invalid":[0-9]*' | grep -o '[0-9]*')
-            RATE=$(cat feed-status.json | grep -o '"successRate":"[^"]*"' | grep -o '[0-9.]*%')
-            CHECK_TIME=$(cat feed-status.json | grep -o '"checkTime":"[^"]*"' | sed 's/"checkTime":"//;s/"$//')
+            # 使用 jq 或 node 解析 JSON 更可靠
+            TOTAL=$(node -e "console.log(require('./feed-status.json').total || 0)")
+            VALID=$(node -e "console.log(require('./feed-status.json').valid || 0)")
+            INVALID=$(node -e "console.log(require('./feed-status.json').invalid || 0)")
+            RATE=$(node -e "console.log(require('./feed-status.json').successRate || '0%')")
+            CHECK_TIME=$(node -e "console.log(require('./feed-status.json').checkTime || 'N/A')")
             
             if [ "$INVALID" -gt 0 ]; then
               echo "subject=⚠️ RSS 订阅源检测发现 ${INVALID} 个失效链接" >> $GITHUB_OUTPUT
@@ -126,6 +127,14 @@ jobs:
             echo "invalid=$INVALID" >> $GITHUB_OUTPUT
             echo "rate=$RATE" >> $GITHUB_OUTPUT
             echo "check_time=$CHECK_TIME" >> $GITHUB_OUTPUT
+          else
+            echo "subject=❓ RSS 订阅源检测未生成报告" >> $GITHUB_OUTPUT
+            echo "status=检测失败" >> $GITHUB_OUTPUT
+            echo "total=0" >> $GITHUB_OUTPUT
+            echo "valid=0" >> $GITHUB_OUTPUT
+            echo "invalid=0" >> $GITHUB_OUTPUT
+            echo "rate=N/A" >> $GITHUB_OUTPUT
+            echo "check_time=N/A" >> $GITHUB_OUTPUT
           fi
 
       - name: Send email notification
