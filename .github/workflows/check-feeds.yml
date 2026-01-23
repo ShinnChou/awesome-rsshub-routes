@@ -129,7 +129,7 @@ jobs:
           fi
 
       - name: Send email notification
-        if: always() && secrets.EMAIL_USERNAME != ''
+        if: always()
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
