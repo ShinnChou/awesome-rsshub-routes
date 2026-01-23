@@ -122,9 +122,14 @@ async function main() {
     await delay(500);
   }
   
+  // 生成北京时间 (UTC+8)
+  const now = new Date();
+  const beijingTime = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+  const checkTimeStr = beijingTime.toISOString().replace('T', ' ').substring(0, 19) + ' (北京时间)';
+  
   // 生成报告
   const report = {
-    checkTime: new Date().toISOString(),
+    checkTime: checkTimeStr,
     total: feeds.length,
     valid: validCount,
     invalid: invalidCount,
