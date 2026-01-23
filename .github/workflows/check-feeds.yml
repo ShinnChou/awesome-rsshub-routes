@@ -103,27 +103,58 @@ jobs:
             echo "✅ 检测完成: $VALID/$TOTAL 个链接可用"
           fi
 
+      - name: Prepare email content
+        id: email
+        run: |
+          if [ -f feed-status.json ]; then
+            TOTAL=$(cat feed-status.json | grep -o '"total":[0-9]*' | grep -o '[0-9]*')
+            VALID=$(cat feed-status.json | grep -o '"valid":[0-9]*' | grep -o '[0-9]*')
+            INVALID=$(cat feed-status.json | grep -o '"invalid":[0-9]*' | grep -o '[0-9]*')
+            RATE=$(cat feed-status.json | grep -o '"successRate":"[^"]*"' | grep -o '[0-9.]*%')
+            CHECK_TIME=$(cat feed-status.json | grep -o '"checkTime":"[^"]*"' | sed 's/"checkTime":"//;s/"$//')
+            
+            if [ "$INVALID" -gt 0 ]; then
+              echo "subject=⚠️ RSS 订阅源检测发现 ${INVALID} 个失效链接" >> $GITHUB_OUTPUT
+              echo "status=有问题" >> $GITHUB_OUTPUT
+            else
+              echo "subject=✅ RSS 订阅源检测全部正常" >> $GITHUB_OUTPUT
+              echo "status=全部正常" >> $GITHUB_OUTPUT
+            fi
+            
+            echo "total=$TOTAL" >> $GITHUB_OUTPUT
+            echo "valid=$VALID" >> $GITHUB_OUTPUT
+            echo "invalid=$INVALID" >> $GITHUB_OUTPUT
+            echo "rate=$RATE" >> $GITHUB_OUTPUT
+            echo "check_time=$CHECK_TIME" >> $GITHUB_OUTPUT
+          fi
+
       - name: Send email notification
-        if: failure() && env.EMAIL_USERNAME != ''
+        if: always() && secrets.EMAIL_USERNAME != ''
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 587
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "⚠️ RSS 订阅源检测发现失效链接"
+          subject: ${{ steps.email.outputs.subject }}
           to: ${{ secrets.EMAIL_TO }}
           from: RSS Feed Checker <${{ secrets.EMAIL_USERNAME }}>
           body: |
-            RSS 订阅源健康检测发现问题！
+            RSS 订阅源健康检测报告
             
-            检测时间: ${{ github.event.repository.updated_at }}
-            仓库: ${{ github.repository }}
+            检测时间: ${{ steps.email.outputs.check_time }}
+            检测状态: ${{ steps.email.outputs.status }}
             
-            请查看 Issue 获取详细报告:
+            ================================
+            📊 检测结果
+            ================================
+            ✅ 可用: ${{ steps.email.outputs.valid }}
+            ❌ 失效: ${{ steps.email.outputs.invalid }}
+            📈 成功率: ${{ steps.email.outputs.rate }}
+            📋 总数: ${{ steps.email.outputs.total }}
+            
+            查看详细报告:
             https://github.com/${{ github.repository }}/issues
             
             ---
             此邮件由 GitHub Actions 自动发送
-        env:
-          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
