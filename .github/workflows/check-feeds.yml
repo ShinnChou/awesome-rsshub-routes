@@ -2,8 +2,8 @@ name: Check RSS Feeds
 
 on:
   schedule:
-    # 每周一早上 10 点 (北京时间 UTC+8，即 UTC 2 点) 运行
-    - cron: '0 2 * * 1'
+    # 每天早上 10 点 (北京时间 UTC+8，即 UTC 2 点) 运行
+    - cron: '0 2 * * *'
   workflow_dispatch: # 允许手动触发
 
 jobs:
