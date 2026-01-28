@@ -1,9 +1,9 @@
 {
-  "checkTime": "2026-01-28 11:50:33 (北京时间)",
-  "total": 60,
+  "checkTime": "2026-01-28 15:00:26 (北京时间)",
+  "total": 59,
   "valid": 59,
-  "invalid": 1,
-  "successRate": "98.3%",
+  "invalid": 0,
+  "successRate": "100.0%",
   "feeds": [
     {
       "name": "OpenAI 博客",
@@ -153,13 +153,6 @@
       "error": null
     },
     {
-      "name": "知乎日报",
-      "url": "https://feeds.feedburner.com/zhihu-daily",
-      "valid": true,
-      "statusCode": 200,
-      "error": null
-    },
-    {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/feed/",
       "valid": true,
@@ -253,9 +246,9 @@
     {
       "name": "CSS-Tricks",
       "url": "https://css-tricks.com/feed/",
-      "valid": false,
-      "statusCode": 415,
-      "error": "HTTP 415"
+      "valid": true,
+      "statusCode": 200,
+      "error": null
     },
     {
       "name": "Dev.to",
