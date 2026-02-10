@@ -30,6 +30,7 @@
   - [🎨 前端 & 设计](#-前端--设计)
   - [📦 编程语言官方博客](#-编程语言官方博客)
   - [🏢 大厂技术博客](#-大厂技术博客)
+  - [📮 技术周刊](#-技术周刊)
 - [🔧 RSSHub 路由](#-rsshub-路由)
   - [社交媒体](#-社交媒体)
   - [技术社区](#-技术社区-1)
@@ -55,6 +56,7 @@
 |------|----------|------|
 | OpenAI 博客 | `https://openai.com/news/rss.xml` | GPT 官方动态 |
 | Google DeepMind | `https://deepmind.google/blog/rss.xml` | DeepMind 研究 |
+| Google AI Blog | `https://blog.google/technology/ai/rss/` | Google AI 综合动态 |
 
 #### AI 论文 & 资讯
 
@@ -72,6 +74,7 @@
 |------|----------|------|
 | Hugging Face 博客 | `https://huggingface.co/blog/feed.xml` | 开源 AI 社区 |
 | Stability AI | `https://stability.ai/news?format=rss` | Stable Diffusion |
+| 机器之心 | `https://www.jiqizhixin.com/rss` | 国内顶尖 AI 媒体 |
 
 ---
 
@@ -188,6 +191,7 @@
 | A List Apart | `https://alistapart.com/main/feed/` | Web 标准与设计 |
 | Codrops | `https://tympanus.net/codrops/feed/` | 创意前端效果 |
 | CSS-Tricks | `https://css-tricks.com/feed/` | CSS 技巧教程 |
+| Tailwind CSS Blog | `https://tailwindcss.com/feeds/feed.xml` | Tailwind CSS 更新 |
 | Dev.to | `https://dev.to/feed` | 开发者社区 |
 | Chrome Developer Blog | `https://developer.chrome.com/blog/feed.xml` | Chrome 开发博客 |
 
@@ -213,6 +217,8 @@
 | Python Blog | `https://blog.python.org/feeds/posts/default` | Python 官方博客 |
 | Node.js Blog | `https://nodejs.org/en/feed/blog.xml` | Node.js 官方博客 |
 | TypeScript Blog | `https://devblogs.microsoft.com/typescript/feed/` | TypeScript 官方博客 |
+| Swift Blog | `https://www.swift.org/atom.xml` | Swift 官方博客 |
+| Kotlin Blog | `https://blog.jetbrains.com/kotlin/feed/` | Kotlin 官方博客 |
 
 ---
 
@@ -229,6 +235,20 @@
 | Mozilla Hacks | `https://hacks.mozilla.org/feed/` | Mozilla 开发者博客 |
 | Vercel Blog | `https://vercel.com/atom` | Vercel 官方博客 |
 | Supabase Blog | `https://supabase.com/blog/rss.xml` | Supabase 官方博客 |
+| Stripe Blog | `https://stripe.com/blog/feed.rss` | Stripe 技术博客 |
+| Spotify Engineering | `https://engineering.atspotify.com/feed/` | Spotify 技术博客 |
+
+---
+
+### 📮 技术周刊
+
+> 高信噪比技术精选，适合周末阅读
+
+| 名称 | 订阅地址 | 说明 |
+|------|----------|------|
+| JavaScript Weekly | `https://javascriptweekly.com/rss/` | JS 生态精选周刊 |
+| This Week in Rust | `https://this-week-in-rust.org/atom.xml` | Rust 社区周报 |
+| Golang Weekly | `https://golangweekly.com/rss/` | Go 生态精选周刊 |
 
 ---
 

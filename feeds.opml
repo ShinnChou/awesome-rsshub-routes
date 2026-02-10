@@ -10,6 +10,7 @@
     <outline text="🤖 AI 专题" title="AI 专题">
       <outline type="rss" text="OpenAI 博客" title="OpenAI 博客" xmlUrl="https://openai.com/news/rss.xml"/>
       <outline type="rss" text="Google DeepMind" title="Google DeepMind" xmlUrl="https://deepmind.google/blog/rss.xml"/>
+      <outline type="rss" text="Google AI Blog" title="Google AI Blog" xmlUrl="https://blog.google/technology/ai/rss/"/>
       <outline type="rss" text="arXiv AI" title="arXiv AI" xmlUrl="https://rss.arxiv.org/rss/cs.AI"/>
       <outline type="rss" text="arXiv 机器学习" title="arXiv 机器学习" xmlUrl="https://rss.arxiv.org/rss/cs.LG"/>
       <outline type="rss" text="arXiv NLP" title="arXiv NLP" xmlUrl="https://rss.arxiv.org/rss/cs.CL"/>
@@ -18,6 +19,7 @@
       <outline type="rss" text="Hacker News LLM" title="Hacker News LLM" xmlUrl="https://hnrss.org/newest?q=LLM"/>
       <outline type="rss" text="Hugging Face 博客" title="Hugging Face 博客" xmlUrl="https://huggingface.co/blog/feed.xml"/>
       <outline type="rss" text="Stability AI" title="Stability AI" xmlUrl="https://stability.ai/news?format=rss"/>
+      <outline type="rss" text="机器之心" title="机器之心" xmlUrl="https://www.jiqizhixin.com/rss"/>
     </outline>
 
     <!-- 技术社区 -->
@@ -63,6 +65,7 @@
       <outline type="rss" text="A List Apart" title="A List Apart" xmlUrl="https://alistapart.com/main/feed/"/>
       <outline type="rss" text="Codrops" title="Codrops" xmlUrl="https://tympanus.net/codrops/feed/"/>
       <outline type="rss" text="CSS-Tricks" title="CSS-Tricks" xmlUrl="https://css-tricks.com/feed/"/>
+      <outline type="rss" text="Tailwind CSS Blog" title="Tailwind CSS Blog" xmlUrl="https://tailwindcss.com/feeds/feed.xml"/>
       <outline type="rss" text="Dev.to" title="Dev.to" xmlUrl="https://dev.to/feed"/>
       <outline type="rss" text="Chrome Developer Blog" title="Chrome Developer Blog" xmlUrl="https://developer.chrome.com/blog/feed.xml"/>
       <outline type="rss" text="Dribbble Popular" title="Dribbble Popular" xmlUrl="https://dribbble.com/shots/popular.rss"/>
@@ -78,6 +81,8 @@
       <outline type="rss" text="Python Blog" title="Python Blog" xmlUrl="https://blog.python.org/feeds/posts/default"/>
       <outline type="rss" text="Node.js Blog" title="Node.js Blog" xmlUrl="https://nodejs.org/en/feed/blog.xml"/>
       <outline type="rss" text="TypeScript Blog" title="TypeScript Blog" xmlUrl="https://devblogs.microsoft.com/typescript/feed/"/>
+      <outline type="rss" text="Swift Blog" title="Swift Blog" xmlUrl="https://www.swift.org/atom.xml"/>
+      <outline type="rss" text="Kotlin Blog" title="Kotlin Blog" xmlUrl="https://blog.jetbrains.com/kotlin/feed/"/>
     </outline>
 
     <!-- 大厂技术博客 -->
@@ -89,6 +94,15 @@
       <outline type="rss" text="Mozilla Hacks" title="Mozilla Hacks" xmlUrl="https://hacks.mozilla.org/feed/"/>
       <outline type="rss" text="Vercel Blog" title="Vercel Blog" xmlUrl="https://vercel.com/atom"/>
       <outline type="rss" text="Supabase Blog" title="Supabase Blog" xmlUrl="https://supabase.com/blog/rss.xml"/>
+      <outline type="rss" text="Stripe Blog" title="Stripe Blog" xmlUrl="https://stripe.com/blog/feed.rss"/>
+      <outline type="rss" text="Spotify Engineering" title="Spotify Engineering" xmlUrl="https://engineering.atspotify.com/feed/"/>
+    </outline>
+
+    <!-- 技术周刊 -->
+    <outline text="📮 技术周刊" title="技术周刊">
+      <outline type="rss" text="JavaScript Weekly" title="JavaScript Weekly" xmlUrl="https://javascriptweekly.com/rss/"/>
+      <outline type="rss" text="This Week in Rust" title="This Week in Rust" xmlUrl="https://this-week-in-rust.org/atom.xml"/>
+      <outline type="rss" text="Golang Weekly" title="Golang Weekly" xmlUrl="https://golangweekly.com/rss/"/>
     </outline>
 
     <!-- 学术论文 -->
