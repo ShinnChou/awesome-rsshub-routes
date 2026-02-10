@@ -1,9 +1,9 @@
 {
-  "checkTime": "2026-02-09 12:26:33 (北京时间)",
+  "checkTime": "2026-02-10 11:13:32 (北京时间)",
   "total": 59,
-  "valid": 58,
-  "invalid": 1,
-  "successRate": "98.3%",
+  "valid": 59,
+  "invalid": 0,
+  "successRate": "100.0%",
   "feeds": [
     {
       "name": "OpenAI 博客",
@@ -246,9 +246,9 @@
     {
       "name": "CSS-Tricks",
       "url": "https://css-tricks.com/feed/",
-      "valid": false,
-      "statusCode": 415,
-      "error": "HTTP 415"
+      "valid": true,
+      "statusCode": 200,
+      "error": null
     },
     {
       "name": "Dev.to",
