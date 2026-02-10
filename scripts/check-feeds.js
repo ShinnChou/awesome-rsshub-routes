@@ -21,58 +21,72 @@ function extractFeedsFromOPML(opmlPath) {
   return feeds;
 }
 
-// 检查单个 URL 是否可访问
-function checkUrl(url, timeout = 30000) {
+// 发起单次 HTTP 请求
+function doRequest(url, headers, timeout = 30000) {
   return new Promise((resolve) => {
     const protocol = url.startsWith('https') ? https : http;
-    
+
     const options = {
       timeout: timeout,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/rss+xml, application/xml, text/xml, */*'
-      },
+      headers: headers,
       rejectUnauthorized: false // 忽略证书错误，避免误报
     };
-    
+
     const req = protocol.get(url, options, (res) => {
-      // 2xx, 3xx 和部分 4xx (403/405 可能是反爬但实际可用) 都算成功
-      const statusCode = res.statusCode;
-      // 只有 404, 500+ 才算真的失效
-      const valid = statusCode < 400 || statusCode === 403 || statusCode === 405;
-      resolve({
-        valid,
-        statusCode: statusCode,
-        error: valid ? null : `HTTP ${statusCode}`
-      });
+      resolve({ statusCode: res.statusCode, error: null });
     });
-    
+
     req.on('error', (err) => {
-      // 证书错误不算失效
-      if (err.message.includes('certificate')) {
-        resolve({
-          valid: true,
-          statusCode: null,
-          error: null
-        });
-      } else {
-        resolve({
-          valid: false,
-          statusCode: null,
-          error: err.message
-        });
-      }
+      resolve({ statusCode: null, error: err.message });
     });
-    
+
     req.on('timeout', () => {
       req.destroy();
-      resolve({
-        valid: false,
-        statusCode: null,
-        error: 'Timeout'
-      });
+      resolve({ statusCode: null, error: 'Timeout' });
     });
   });
+}
+
+// 检查单个 URL 是否可访问
+async function checkUrl(url, timeout = 30000) {
+  const defaultHeaders = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+  };
+
+  let { statusCode, error } = await doRequest(url, defaultHeaders, timeout);
+
+  // 证书错误不算失效
+  if (error && error.includes('certificate')) {
+    return { valid: true, statusCode: null, error: null };
+  }
+
+  // 415/406 通常是 CDN/WAF 对内容协商的误拦截，用更宽松的请求头重试一次
+  if (statusCode === 415 || statusCode === 406) {
+    const retryHeaders = {
+      'User-Agent': defaultHeaders['User-Agent'],
+      'Accept': '*/*'
+    };
+    const retry = await doRequest(url, retryHeaders, timeout);
+    if (retry.statusCode && retry.statusCode < 400) {
+      return { valid: true, statusCode: retry.statusCode, error: null };
+    }
+    // 重试仍失败，但 415/406 在 GET 请求中大概率是 WAF 误拦而非真正失效，视为可用
+    return { valid: true, statusCode: statusCode, error: null };
+  }
+
+  if (error) {
+    return { valid: false, statusCode: null, error: error };
+  }
+
+  // 2xx, 3xx 和部分 4xx (403/405 可能是反爬但实际可用) 都算成功
+  // 只有 404, 500+ 才算真的失效
+  const valid = statusCode < 400 || statusCode === 403 || statusCode === 405;
+  return {
+    valid,
+    statusCode: statusCode,
+    error: valid ? null : `HTTP ${statusCode}`
+  };
 }
 
 // 延迟函数
