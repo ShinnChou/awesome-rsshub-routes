@@ -1,7 +1,7 @@
 {
-  "checkTime": "2026-02-10 11:13:32 (北京时间)",
-  "total": 59,
-  "valid": 59,
+  "checkTime": "2026-02-10 14:56:47 (北京时间)",
+  "total": 69,
+  "valid": 69,
   "invalid": 0,
   "successRate": "100.0%",
   "feeds": [
@@ -17,6 +17,13 @@
       "url": "https://deepmind.google/blog/rss.xml",
       "valid": true,
       "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "valid": true,
+      "statusCode": 301,
       "error": null
     },
     {
@@ -71,6 +78,13 @@
     {
       "name": "Stability AI",
       "url": "https://stability.ai/news?format=rss",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "机器之心",
+      "url": "https://www.jiqizhixin.com/rss",
       "valid": true,
       "statusCode": 200,
       "error": null
@@ -251,6 +265,13 @@
       "error": null
     },
     {
+      "name": "Tailwind CSS Blog",
+      "url": "https://tailwindcss.com/feeds/feed.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
       "name": "Dev.to",
       "url": "https://dev.to/feed",
       "valid": true,
@@ -328,6 +349,20 @@
       "error": null
     },
     {
+      "name": "Swift Blog",
+      "url": "https://www.swift.org/atom.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Kotlin Blog",
+      "url": "https://blog.jetbrains.com/kotlin/feed/",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
       "name": "GitHub Blog",
       "url": "https://github.blog/feed/",
       "valid": true,
@@ -374,6 +409,41 @@
       "url": "https://supabase.com/blog/rss.xml",
       "valid": true,
       "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Stripe Blog",
+      "url": "https://stripe.com/blog/feed.rss",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Spotify Engineering",
+      "url": "https://engineering.atspotify.com/feed/",
+      "valid": true,
+      "statusCode": 308,
+      "error": null
+    },
+    {
+      "name": "JavaScript Weekly",
+      "url": "https://javascriptweekly.com/rss/",
+      "valid": true,
+      "statusCode": 302,
+      "error": null
+    },
+    {
+      "name": "This Week in Rust",
+      "url": "https://this-week-in-rust.org/atom.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Golang Weekly",
+      "url": "https://golangweekly.com/rss/",
+      "valid": true,
+      "statusCode": 302,
       "error": null
     },
     {
