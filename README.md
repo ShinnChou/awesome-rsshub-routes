@@ -11,8 +11,6 @@
 
 > Curated RSS feeds and RSSHub routes for efficient reading.
 
-Browse online at [jackyst0.github.io/awesome-rsshub-routes](https://jackyst0.github.io/awesome-rsshub-routes/) with search, filtering, and one-click copy.
-
 Download [feeds.opml](./feeds.opml) and import it into your RSS reader to subscribe to all curated feeds.
 
 ## Contents
