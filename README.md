@@ -2,10 +2,10 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub stars](https://img.shields.io/github/stars/JackyST0/awesome-rsshub-routes?style=social)](https://github.com/JackyST0/awesome-rsshub-routes)
-[![License](https://img.shields.io/github/license/JackyST0/awesome-rsshub-routes)](LICENSE)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Check Feeds](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml/badge.svg)](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml)
 
-**中文** | [English](./README-en.md)
+**中文** | [English](./readme-en.md)
 
 > 🔥 精选 RSS 订阅源推荐，包含 RSSHub 路由和官方 RSS，让你的阅读更高效！
 
@@ -467,5 +467,5 @@
 
 ## 📄 License
 
-MIT © [JackyST0](https://github.com/JackyST0)
+[CC0](LICENSE)
 
