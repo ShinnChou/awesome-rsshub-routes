@@ -5,7 +5,7 @@
 [![Check Feeds](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml/badge.svg)](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml)
 
 <a href="https://jackyst0.github.io/awesome-rsshub-routes/">
-  <img src="https://raw.githubusercontent.com/JackyST0/awesome-rsshub-routes/main/assets/banner.svg" alt="Awesome RSSHub Routes">
+  <img src="assets/banner.svg" alt="Awesome RSSHub Routes">
 </a>
 
 **中文** | [English](./README.md)
