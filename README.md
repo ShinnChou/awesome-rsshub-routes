@@ -1,5 +1,9 @@
 # Awesome RSSHub Routes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<a href="https://jackyst0.github.io/awesome-rsshub-routes/">
+  <img src="assets/banner.png" alt="Awesome RSSHub Routes">
+</a>
+
 [中文](./readme-zh.md) | **English**
 
 > Curated RSS feeds and RSSHub routes for efficient reading.
