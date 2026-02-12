@@ -1,5 +1,5 @@
 {
-  "checkTime": "2026-02-12 15:32:34 (北京时间)",
+  "checkTime": "2026-02-12 15:48:01 (北京时间)",
   "total": 69,
   "valid": 69,
   "invalid": 0,
@@ -261,7 +261,7 @@
       "name": "CSS-Tricks",
       "url": "https://css-tricks.com/feed/",
       "valid": true,
-      "statusCode": 200,
+      "statusCode": 415,
       "error": null
     },
     {
