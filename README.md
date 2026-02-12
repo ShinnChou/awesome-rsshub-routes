@@ -4,7 +4,7 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 <a href="https://jackyst0.github.io/awesome-rsshub-routes/">
-  <img src="assets/banner.svg" alt="Awesome RSSHub Routes">
+  <img src="https://raw.githubusercontent.com/JackyST0/awesome-rsshub-routes/main/assets/banner.svg" alt="Awesome RSSHub Routes">
 </a>
 
 [中文](./readme-zh.md) | **English**
