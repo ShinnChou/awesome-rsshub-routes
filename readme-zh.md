@@ -4,9 +4,11 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Check Feeds](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml/badge.svg)](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml)
 
-<a href="https://jackyst0.github.io/awesome-rsshub-routes/">
-  <img src="assets/banner.svg" alt="Awesome RSSHub Routes">
-</a>
+<p align="center">
+  <a href="https://jackyst0.github.io/awesome-rsshub-routes/">
+    <img src="assets/banner.svg" alt="Awesome RSSHub Routes" width="100%">
+  </a>
+</p>
 
 **中文** | [English](./README.md)
 
