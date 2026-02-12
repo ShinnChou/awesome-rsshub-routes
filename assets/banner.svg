@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="#f9fafb" />
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#barGrad)" />
+
+  <!-- Subtle grid dots -->
+  <g fill="#e5e7eb" opacity="0.5">
+    <circle cx="60" cy="60" r="2" />
+    <circle cx="120" cy="60" r="2" />
+    <circle cx="180" cy="60" r="2" />
+    <circle cx="60" cy="120" r="2" />
+    <circle cx="120" cy="120" r="2" />
+    <circle cx="180" cy="120" r="2" />
+    <circle cx="60" cy="180" r="2" />
+    <circle cx="120" cy="180" r="2" />
+    <circle cx="180" cy="180" r="2" />
+    <circle cx="60" cy="240" r="2" />
+    <circle cx="120" cy="240" r="2" />
+    <circle cx="180" cy="240" r="2" />
+    <circle cx="1020" cy="60" r="2" />
+    <circle cx="1080" cy="60" r="2" />
+    <circle cx="1140" cy="60" r="2" />
+    <circle cx="1020" cy="120" r="2" />
+    <circle cx="1080" cy="120" r="2" />
+    <circle cx="1140" cy="120" r="2" />
+    <circle cx="1020" cy="180" r="2" />
+    <circle cx="1080" cy="180" r="2" />
+    <circle cx="1140" cy="180" r="2" />
+    <circle cx="1020" cy="240" r="2" />
+    <circle cx="1080" cy="240" r="2" />
+    <circle cx="1140" cy="240" r="2" />
+  </g>
+
+  <!-- Left decorative shapes -->
+  <rect x="40" y="70" width="40" height="40" rx="8" fill="#f97316" opacity="0.08" />
+  <rect x="100" y="170" width="30" height="30" rx="6" fill="#8b5cf6" opacity="0.06" />
+  <circle cx="160" cy="110" r="20" fill="#ec4899" opacity="0.06" />
+
+  <!-- Right decorative shapes -->
+  <rect x="1100" y="80" width="40" height="40" rx="8" fill="#8b5cf6" opacity="0.08" />
+  <rect x="1040" y="190" width="30" height="30" rx="6" fill="#f97316" opacity="0.06" />
+  <circle cx="1060" cy="100" r="20" fill="#ec4899" opacity="0.06" />
+
+  <!-- Emoji -->
+  <text x="600" y="90" text-anchor="middle" dominant-baseline="central" font-size="36">=á</text>
+
+  <!-- Main title -->
+  <text x="600" y="140" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="bold" fill="url(#grad)">Awesome RSSHub Routes</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="178" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" fill="#6b7280">Curated RSS feeds and RSSHub routes for efficient reading</text>
+
+  <!-- Category badges (total width: 40+10+55+10+75+10+75+10+90+10+95 = 480, start at (1200-480)/2 = 360) -->
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="500">
+    <!-- AI -->
+    <rect x="360" y="210" width="40" height="26" rx="13" fill="#f97316" />
+    <text x="380" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">AI</text>
+
+    <!-- Tech -->
+    <rect x="410" y="210" width="55" height="26" rx="13" fill="#8b5cf6" />
+    <text x="437" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Tech</text>
+
+    <!-- Security -->
+    <rect x="475" y="210" width="75" height="26" rx="13" fill="#059669" />
+    <text x="512" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Security</text>
+
+    <!-- Frontend -->
+    <rect x="560" y="210" width="75" height="26" rx="13" fill="#2563eb" />
+    <text x="597" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Frontend</text>
+
+    <!-- Newsletters -->
+    <rect x="645" y="210" width="90" height="26" rx="13" fill="#8b5cf6" />
+    <text x="690" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Newsletters</text>
+
+    <!-- Engineering -->
+    <rect x="745" y="210" width="95" height="26" rx="13" fill="#f97316" />
+    <text x="792" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Engineering</text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect y="296" width="1200" height="4" fill="url(#barGrad)" />
+</svg>
