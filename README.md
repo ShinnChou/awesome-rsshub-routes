@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/github/license/JackyST0/awesome-rsshub-routes)](LICENSE)
 [![Check Feeds](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml/badge.svg)](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml)
 
+**中文** | [English](./README-en.md)
+
 > 🔥 精选 RSS 订阅源推荐，包含 RSSHub 路由和官方 RSS，让你的阅读更高效！
 
 🌐 **在线浏览**：**https://jackyst0.github.io/awesome-rsshub-routes/** - 支持分类筛选、搜索、一键复制
