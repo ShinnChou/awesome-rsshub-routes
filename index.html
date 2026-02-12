@@ -50,10 +50,15 @@
           <span class="text-3xl">🎯</span>
           <div>
             <h1 class="text-xl font-bold gradient-text">Awesome RSSHub Routes</h1>
-            <p class="text-sm text-gray-500">精选 RSS 订阅源，让阅读更高效</p>
+            <p class="text-sm text-gray-500" data-i18n="subtitle">精选 RSS 订阅源，让阅读更高效</p>
           </div>
         </div>
         <div class="flex items-center gap-3">
+          <button id="lang-toggle" onclick="toggleLang()"
+                  class="px-3 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 transition"
+                  title="Switch Language">
+            EN
+          </button>
           <a href="https://github.com/JackyST0/awesome-rsshub-routes" target="_blank" 
              class="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition">
             <i class="fab fa-github"></i>
@@ -62,7 +67,7 @@
           <a href="feeds.opml" download 
              class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:opacity-90 transition">
             <i class="fas fa-download"></i>
-            <span>下载 OPML</span>
+            <span data-i18n="download">下载 OPML</span>
           </a>
         </div>
       </div>
@@ -75,19 +80,19 @@
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
       <div class="bg-white rounded-xl p-4 shadow-sm text-center">
         <div class="text-2xl font-bold text-indigo-600" id="total-feeds">0</div>
-        <div class="text-sm text-gray-500">订阅源总数</div>
+        <div class="text-sm text-gray-500" data-i18n="totalFeeds">订阅源总数</div>
       </div>
       <div class="bg-white rounded-xl p-4 shadow-sm text-center">
         <div class="text-2xl font-bold text-purple-600" id="total-categories">0</div>
-        <div class="text-sm text-gray-500">分类数量</div>
+        <div class="text-sm text-gray-500" data-i18n="categories">分类数量</div>
       </div>
       <div class="bg-white rounded-xl p-4 shadow-sm text-center">
         <div class="text-2xl font-bold text-green-600" id="valid-feeds">-</div>
-        <div class="text-sm text-gray-500">可用订阅</div>
+        <div class="text-sm text-gray-500" data-i18n="available">可用订阅</div>
       </div>
       <div class="bg-white rounded-xl p-4 shadow-sm text-center">
         <div class="text-2xl font-bold text-blue-600" id="success-rate">-</div>
-        <div class="text-sm text-gray-500">成功率</div>
+        <div class="text-sm text-gray-500" data-i18n="successRate">成功率</div>
       </div>
     </div>
 
@@ -96,13 +101,13 @@
       <!-- Search -->
       <div class="relative mb-4">
         <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-        <input type="text" id="search-input" placeholder="搜索订阅源名称或链接..." 
+        <input type="text" id="search-input" data-i18n-placeholder="searchPlaceholder" placeholder="搜索订阅源名称或链接..." 
                class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none text-gray-900 bg-white text-base">
       </div>
       <!-- Category Filters -->
       <div class="flex gap-2 overflow-x-auto pb-2" id="category-filters">
         <button class="category-btn active px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-category="all" onclick="filterByCategory('all')">
-          全部
+          <span data-i18n="all">全部</span>
         </button>
       </div>
     </div>
@@ -115,7 +120,7 @@
     <!-- Empty State -->
     <div id="empty-state" class="hidden text-center py-12">
       <i class="fas fa-search text-4xl text-gray-300 mb-4"></i>
-      <p class="text-gray-500">没有找到匹配的订阅源</p>
+      <p class="text-gray-500" data-i18n="noResults">没有找到匹配的订阅源</p>
     </div>
   </main>
 
@@ -127,9 +132,9 @@
           Made with ❤️ by <a href="https://github.com/JackyST0" class="text-indigo-600 hover:underline">JackyST0</a>
         </p>
         <div class="flex items-center gap-4 text-sm text-gray-500">
-          <span id="last-check">最近检测：-</span>
+          <span id="last-check" data-i18n-prefix="lastCheck">最近检测：-</span>
           <a href="https://github.com/JackyST0/awesome-rsshub-routes/issues" class="text-indigo-600 hover:underline">
-            <i class="fas fa-chart-line mr-1"></i>查看状态报告
+            <i class="fas fa-chart-line mr-1"></i><span data-i18n="viewReport">查看状态报告</span>
           </a>
         </div>
       </div>
@@ -143,6 +148,86 @@
   </div>
 
   <script>
+    // i18n 字典
+    const i18n = {
+      zh: {
+        subtitle: '精选 RSS 订阅源，让阅读更高效',
+        download: '下载 OPML',
+        totalFeeds: '订阅源总数',
+        categories: '分类数量',
+        available: '可用订阅',
+        successRate: '成功率',
+        searchPlaceholder: '搜索订阅源名称或链接...',
+        all: '全部',
+        copyUrl: '复制链接',
+        noResults: '没有找到匹配的订阅源',
+        lastCheck: '最近检测',
+        viewReport: '查看状态报告',
+        copied: '已复制到剪贴板',
+        loadError: '加载订阅源失败',
+        noData: '暂无检测数据',
+        title: 'Awesome RSSHub Routes - 精选 RSS 订阅源'
+      },
+      en: {
+        subtitle: 'Curated RSS feeds for efficient reading',
+        download: 'Download OPML',
+        totalFeeds: 'Total Feeds',
+        categories: 'Categories',
+        available: 'Available',
+        successRate: 'Success Rate',
+        searchPlaceholder: 'Search feeds by name or URL...',
+        all: 'All',
+        copyUrl: 'Copy URL',
+        noResults: 'No matching feeds found',
+        lastCheck: 'Last Check',
+        viewReport: 'View Status Report',
+        copied: 'Copied to clipboard',
+        loadError: 'Failed to load feeds',
+        noData: 'No check data available',
+        title: 'Awesome RSSHub Routes - Curated RSS Feeds'
+      }
+    };
+
+    // 当前语言
+    let currentLang = localStorage.getItem('lang') || 'zh';
+
+    // 切换语言
+    function toggleLang() {
+      currentLang = currentLang === 'zh' ? 'en' : 'zh';
+      localStorage.setItem('lang', currentLang);
+      applyLang();
+      renderFeeds(); // 重新渲染卡片上的按钮文字
+    }
+
+    // 应用语言
+    function applyLang() {
+      const t = i18n[currentLang];
+
+      // 更新页面标题
+      document.title = t.title;
+      document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
+
+      // 更新切换按钮
+      document.getElementById('lang-toggle').textContent = currentLang === 'zh' ? 'EN' : '中';
+
+      // 更新所有 data-i18n 元素
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+
+      // 更新 placeholder
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (t[key]) el.placeholder = t[key];
+      });
+
+      // 更新 last-check（保留时间部分）
+      const lastCheckEl = document.getElementById('last-check');
+      const checkTime = lastCheckEl.dataset.checkTime || '-';
+      lastCheckEl.textContent = `${t.lastCheck}：${checkTime}`;
+    }
+
     // 全局数据
     let allFeeds = [];
     let categories = [];
@@ -178,7 +263,7 @@
         renderFeeds();
         loadFeedStatus();
       } catch (error) {
-        console.error('加载订阅源失败:', error);
+        console.error(i18n[currentLang].loadError, error);
       }
     }
 
@@ -190,10 +275,12 @@
           const status = await response.json();
           document.getElementById('valid-feeds').textContent = status.valid;
           document.getElementById('success-rate').textContent = status.successRate;
-          document.getElementById('last-check').textContent = `最近检测：${status.checkTime}`;
+          const lastCheckEl = document.getElementById('last-check');
+          lastCheckEl.dataset.checkTime = status.checkTime;
+          lastCheckEl.textContent = `${i18n[currentLang].lastCheck}：${status.checkTime}`;
         }
       } catch (error) {
-        console.log('暂无检测数据');
+        console.log(i18n[currentLang].noData);
       }
     }
 
@@ -220,6 +307,7 @@
     function renderFeeds() {
       const container = document.getElementById('feeds-grid');
       const emptyState = document.getElementById('empty-state');
+      const t = i18n[currentLang];
       
       let filteredFeeds = allFeeds;
       
@@ -258,7 +346,7 @@
           <div class="flex gap-2">
             <button onclick="copyUrl('${escapeHtml(feed.url)}')" 
                     class="copy-btn flex-1 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm transition">
-              <i class="fas fa-copy mr-1"></i>复制链接
+              <i class="fas fa-copy mr-1"></i>${t.copyUrl}
             </button>
             <a href="${escapeHtml(feed.url)}" target="_blank" 
                class="px-3 py-1.5 bg-indigo-100 hover:bg-indigo-200 text-indigo-700 rounded-lg text-sm transition">
@@ -284,7 +372,7 @@
     // 复制链接
     function copyUrl(url) {
       navigator.clipboard.writeText(url).then(() => {
-        showToast('已复制到剪贴板');
+        showToast(i18n[currentLang].copied);
       });
     }
 
@@ -310,6 +398,7 @@
     });
 
     // 初始化
+    applyLang();
     loadFeeds();
   </script>
 </body>
