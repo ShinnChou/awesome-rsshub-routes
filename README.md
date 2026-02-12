@@ -1,5 +1,8 @@
 # Awesome RSSHub Routes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+[![GitHub stars](https://img.shields.io/github/stars/JackyST0/awesome-rsshub-routes?style=social)](https://github.com/JackyST0/awesome-rsshub-routes)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
 <a href="https://jackyst0.github.io/awesome-rsshub-routes/">
   <img src="assets/banner.png" alt="Awesome RSSHub Routes">
 </a>
