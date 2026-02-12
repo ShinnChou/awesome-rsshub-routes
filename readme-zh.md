@@ -12,6 +12,14 @@
 
 > 🔥 精选 RSS 订阅源推荐，包含 RSSHub 路由和官方 RSS，让你的阅读更高效！
 
+🌐 **在线浏览**：**https://jackyst0.github.io/awesome-rsshub-routes/** - 支持分类筛选、搜索、一键复制
+
+本项目收集整理了**最实用、最常用**的 RSS 订阅源，包括：
+- 📡 **官方 RSS** - 网站自带的 RSS 订阅
+- 🔧 **RSSHub 路由** - 通过 [RSSHub](https://github.com/DIYgod/RSSHub) 生成的 RSS
+
+🌐 **RSSHub 官方文档**：https://docs.rsshub.app
+
 📥 **一键导入**：下载 [feeds.opml](./feeds.opml) 文件，导入到你的 RSS 阅读器即可订阅全部精选源！
 
 ---

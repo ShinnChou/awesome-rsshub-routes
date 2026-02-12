@@ -11,7 +11,13 @@
 
 > Curated RSS feeds and RSSHub routes for efficient reading.
 
-Download [feeds.opml](./feeds.opml) and import it into your RSS reader to subscribe to all curated feeds.
+🌐 **Browse Online**: **https://jackyst0.github.io/awesome-rsshub-routes/** - Search, filter by category, and copy with one click
+
+This project curates the **most practical and commonly used** RSS feeds, including:
+- 📡 **Official RSS** - Native RSS feeds provided by websites
+- 🔧 **RSSHub Routes** - RSS feeds generated via [RSSHub](https://github.com/DIYgod/RSSHub)
+
+📥 **One-Click Import**: Download [feeds.opml](./feeds.opml) and import it into your RSS reader to subscribe to all curated feeds!
 
 ## Contents
 
