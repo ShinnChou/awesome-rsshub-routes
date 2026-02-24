@@ -1,9 +1,9 @@
 {
-  "checkTime": "2026-02-23 12:24:06 (北京时间)",
+  "checkTime": "2026-02-24 14:08:49 (北京时间)",
   "total": 69,
-  "valid": 68,
-  "invalid": 1,
-  "successRate": "98.6%",
+  "valid": 69,
+  "invalid": 0,
+  "successRate": "100.0%",
   "feeds": [
     {
       "name": "OpenAI 博客",
@@ -204,9 +204,9 @@
     {
       "name": "Krebs on Security",
       "url": "https://krebsonsecurity.com/feed/",
-      "valid": false,
-      "statusCode": 502,
-      "error": "HTTP 502"
+      "valid": true,
+      "statusCode": 200,
+      "error": null
     },
     {
       "name": "The Hacker News",
