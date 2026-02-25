@@ -362,7 +362,7 @@ Simply copy the feed URL into your RSS reader. No assembly required.
 | [Inoreader](https://www.inoreader.com/) | Web / App      | Feature-rich.                |
 | [NetNewsWire](https://netnewswire.com/) | macOS / iOS    | Native and free.             |
 | Fluent Reader                           | Cross-platform | Open-source and modern.      |
-| [Follow](https://follow.is/)            | Cross-platform | Next-gen with AI.            |
+| [Folo](https://folo.is/)                | Cross-platform | Next-gen with AI.            |
 | [FreshRSS](https://freshrss.org/)       | Self-hosted    | Open-source and self-hosted. |
 
 ## Contributing

@@ -436,7 +436,7 @@
 | [Inoreader](https://www.inoreader.com/) | Web / App | 功能强大 |
 | [NetNewsWire](https://netnewswire.com/) | macOS / iOS | 原生免费 |
 | [Fluent Reader](https://github.com/yang991178/fluent-reader) | 跨平台 | 开源现代 |
-| [Follow](https://follow.is/) | 跨平台 | 新一代 AI |
+| [Folo](https://folo.is/) | 跨平台 | 新一代 AI |
 | [FreshRSS](https://freshrss.org/) | Self-hosted | 开源自建 |
 
 ---
