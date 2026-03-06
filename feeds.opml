@@ -20,6 +20,7 @@
       <outline type="rss" text="Hugging Face 博客" title="Hugging Face 博客" xmlUrl="https://huggingface.co/blog/feed.xml"/>
       <outline type="rss" text="Stability AI" title="Stability AI" xmlUrl="https://stability.ai/news?format=rss"/>
       <outline type="rss" text="机器之心" title="机器之心" xmlUrl="https://www.jiqizhixin.com/rss"/>
+      <outline type="rss" text="Simon Willison's Blog" title="Simon Willison's Blog" xmlUrl="https://simonwillison.net/atom/everything/"/>
     </outline>
 
     <!-- 技术社区 -->
@@ -96,6 +97,7 @@
       <outline type="rss" text="Supabase Blog" title="Supabase Blog" xmlUrl="https://supabase.com/blog/rss.xml"/>
       <outline type="rss" text="Stripe Blog" title="Stripe Blog" xmlUrl="https://stripe.com/blog/feed.rss"/>
       <outline type="rss" text="Spotify Engineering" title="Spotify Engineering" xmlUrl="https://engineering.atspotify.com/feed/"/>
+      <outline type="rss" text="Meta Engineering" title="Meta Engineering" xmlUrl="https://engineering.fb.com/feed/"/>
     </outline>
 
     <!-- 技术周刊 -->
@@ -103,6 +105,7 @@
       <outline type="rss" text="JavaScript Weekly" title="JavaScript Weekly" xmlUrl="https://javascriptweekly.com/rss/"/>
       <outline type="rss" text="This Week in Rust" title="This Week in Rust" xmlUrl="https://this-week-in-rust.org/atom.xml"/>
       <outline type="rss" text="Golang Weekly" title="Golang Weekly" xmlUrl="https://golangweekly.com/rss/"/>
+      <outline type="rss" text="ByteByteGo" title="ByteByteGo" xmlUrl="https://blog.bytebytego.com/feed"/>
     </outline>
 
     <!-- 学术论文 -->

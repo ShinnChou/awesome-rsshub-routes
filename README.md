@@ -72,9 +72,10 @@ AI company blogs, research papers, tools and products.
 
 | Name              | Feed URL                               | Description              |
 | ----------------- | -------------------------------------- | ------------------------ |
-| Hugging Face Blog | `https://huggingface.co/blog/feed.xml` | Open-source AI community |
-| Stability AI      | `https://stability.ai/news?format=rss` | Stable Diffusion         |
-| Synced            | `https://www.jiqizhixin.com/rss`       | Top Chinese AI media     |
+| Hugging Face Blog    | `https://huggingface.co/blog/feed.xml`         | Open-source AI community          |
+| Stability AI         | `https://stability.ai/news?format=rss`         | Stable Diffusion                   |
+| Synced               | `https://www.jiqizhixin.com/rss`               | Top Chinese AI media               |
+| Simon Willison's Blog | `https://simonwillison.net/atom/everything/`  | LLM insights, Django co-creator    |
 
 ### Tech Communities
 
@@ -207,6 +208,7 @@ Engineering blogs from major tech companies.
 | Supabase Blog       | `https://supabase.com/blog/rss.xml`       | Supabase official blog |
 | Stripe Blog         | `https://stripe.com/blog/feed.rss`        | Stripe engineering     |
 | Spotify Engineering | `https://engineering.atspotify.com/feed/` | Spotify engineering    |
+| Meta Engineering    | `https://engineering.fb.com/feed/`        | Meta/Facebook engineering |
 
 ### Tech Newsletters
 
@@ -214,9 +216,10 @@ High signal-to-noise ratio weekly digests.
 
 | Name              | Feed URL                                 | Description           |
 | ----------------- | ---------------------------------------- | --------------------- |
-| JavaScript Weekly | `https://javascriptweekly.com/rss/`      | JS ecosystem weekly   |
-| This Week in Rust | `https://this-week-in-rust.org/atom.xml` | Rust community weekly |
-| Golang Weekly     | `https://golangweekly.com/rss/`          | Go ecosystem weekly   |
+| JavaScript Weekly | `https://javascriptweekly.com/rss/`      | JS ecosystem weekly          |
+| This Week in Rust | `https://this-week-in-rust.org/atom.xml` | Rust community weekly        |
+| Golang Weekly     | `https://golangweekly.com/rss/`          | Go ecosystem weekly          |
+| ByteByteGo        | `https://blog.bytebytego.com/feed`       | System design newsletter     |
 
 ### Academic Papers
 
@@ -253,6 +256,19 @@ The following routes require RSSHub. Format: `https://rsshub.app` + route.
 | Name     | Route         | Description     |
 | -------- | ------------- | --------------- |
 | Trending | `/douyin/hot` | Douyin trending |
+
+#### Xiaohongshu
+
+| Name       | Route                                  | Description      |
+| ---------- | -------------------------------------- | ---------------- |
+| User Notes | `/xiaohongshu/user/:user_id/notes`     | User posts       |
+| User Favs  | `/xiaohongshu/user/:user_id/collect`   | User favorites   |
+
+#### Telegram
+
+| Name    | Route                          | Description            |
+| ------- | ------------------------------ | ---------------------- |
+| Channel | `/telegram/channel/:username`  | Public channel updates |
 
 ### Tech Communities via RSSHub
 

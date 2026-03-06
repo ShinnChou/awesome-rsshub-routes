@@ -78,6 +78,7 @@
 | Hugging Face 博客 | `https://huggingface.co/blog/feed.xml` | 开源 AI 社区 |
 | Stability AI | `https://stability.ai/news?format=rss` | Stable Diffusion |
 | 机器之心 | `https://www.jiqizhixin.com/rss` | 国内顶尖 AI 媒体 |
+| Simon Willison 博客 | `https://simonwillison.net/atom/everything/` | LLM 洞察，Django 联合创始人 |
 
 ---
 
@@ -240,6 +241,7 @@
 | Supabase Blog | `https://supabase.com/blog/rss.xml` | Supabase 官方博客 |
 | Stripe Blog | `https://stripe.com/blog/feed.rss` | Stripe 技术博客 |
 | Spotify Engineering | `https://engineering.atspotify.com/feed/` | Spotify 技术博客 |
+| Meta Engineering | `https://engineering.fb.com/feed/` | Meta/Facebook 技术博客 |
 
 ---
 
@@ -252,6 +254,7 @@
 | JavaScript Weekly | `https://javascriptweekly.com/rss/` | JS 生态精选周刊 |
 | This Week in Rust | `https://this-week-in-rust.org/atom.xml` | Rust 社区周报 |
 | Golang Weekly | `https://golangweekly.com/rss/` | Go 生态精选周刊 |
+| ByteByteGo | `https://blog.bytebytego.com/feed` | 系统设计 Newsletter |
 
 ---
 
@@ -295,6 +298,23 @@
 | 名称 | 路由 | 说明 |
 |------|------|------|
 | 热搜榜 | `/douyin/hot` | 抖音热搜 |
+
+#### 小红书
+
+| 名称 | 路由 | 说明 |
+|------|------|------|
+| 用户笔记 | `/xiaohongshu/user/:user_id/notes` | 用户笔记动态 |
+| 用户收藏 | `/xiaohongshu/user/:user_id/collect` | 用户收藏内容 |
+
+> 💡 需要 24 位用户 ID，依赖 Puppeteer，有严格的反爬机制
+
+#### Telegram
+
+| 名称 | 路由 | 说明 |
+|------|------|------|
+| 频道消息 | `/telegram/channel/:username` | 公开频道更新 |
+
+> 💡 示例：`/telegram/channel/awesomeRSSHub`
 
 ---
 

@@ -6,7 +6,7 @@ Contributions are welcome! Please read the following guidelines before submittin
 
 1. Make sure the feed is **actually working** — test it in an RSS reader before submitting.
 2. Check that the feed is not already listed.
-3. Add the feed to the appropriate category in both `README.md` (and `README-en.md`) and `feeds.opml`.
+3. Add the feed to the appropriate category in both `README.md` (and `readme-zh.md`) and `feeds.opml`.
 4. Use the following format in the README table:
 
 | Name | Feed URL | Description |
