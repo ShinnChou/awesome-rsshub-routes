@@ -59,6 +59,8 @@
       <outline type="rss" text="Krebs on Security" title="Krebs on Security" xmlUrl="https://krebsonsecurity.com/feed/"/>
       <outline type="rss" text="The Hacker News" title="The Hacker News" xmlUrl="https://feeds.feedburner.com/TheHackersNews"/>
       <outline type="rss" text="Schneier on Security" title="Schneier on Security" xmlUrl="https://www.schneier.com/feed/"/>
+      <outline type="rss" text="CISA News" title="CISA News" xmlUrl="https://www.cisa.gov/news.xml"/>
+      <outline type="rss" text="Google Security Blog" title="Google Security Blog" xmlUrl="https://security.googleblog.com/atom.xml"/>
       <outline type="rss" text="FreeBuf" title="FreeBuf" xmlUrl="https://www.freebuf.com/feed"/>
       <outline type="rss" text="安全客" title="安全客" xmlUrl="https://api.anquanke.com/data/v1/rss"/>
     </outline>
@@ -69,6 +71,10 @@
       <outline type="rss" text="A List Apart" title="A List Apart" xmlUrl="https://alistapart.com/main/feed/"/>
       <outline type="rss" text="Codrops" title="Codrops" xmlUrl="https://tympanus.net/codrops/feed/"/>
       <outline type="rss" text="CSS-Tricks" title="CSS-Tricks" xmlUrl="https://css-tricks.com/feed/"/>
+      <outline type="rss" text="Astro Blog" title="Astro Blog" xmlUrl="https://astro.build/rss.xml"/>
+      <outline type="rss" text="Svelte Blog" title="Svelte Blog" xmlUrl="https://svelte.dev/blog/rss.xml"/>
+      <outline type="rss" text="Next.js Blog" title="Next.js Blog" xmlUrl="https://nextjs.org/feed.xml"/>
+      <outline type="rss" text="Nuxt Blog" title="Nuxt Blog" xmlUrl="https://nuxt.com/blog/rss.xml"/>
       <outline type="rss" text="Tailwind CSS Blog" title="Tailwind CSS Blog" xmlUrl="https://tailwindcss.com/feeds/feed.xml"/>
       <outline type="rss" text="Dev.to" title="Dev.to" xmlUrl="https://dev.to/feed"/>
       <outline type="rss" text="Chrome Developer Blog" title="Chrome Developer Blog" xmlUrl="https://developer.chrome.com/blog/feed.xml"/>
@@ -84,6 +90,7 @@
       <outline type="rss" text="Go Blog" title="Go Blog" xmlUrl="https://go.dev/blog/feed.atom"/>
       <outline type="rss" text="Python Blog" title="Python Blog" xmlUrl="https://blog.python.org/feeds/posts/default"/>
       <outline type="rss" text="Node.js Blog" title="Node.js Blog" xmlUrl="https://nodejs.org/en/feed/blog.xml"/>
+      <outline type="rss" text="Deno Blog" title="Deno Blog" xmlUrl="https://deno.com/blog/feed.xml"/>
       <outline type="rss" text="TypeScript Blog" title="TypeScript Blog" xmlUrl="https://devblogs.microsoft.com/typescript/feed/"/>
       <outline type="rss" text="Swift Blog" title="Swift Blog" xmlUrl="https://www.swift.org/atom.xml"/>
       <outline type="rss" text="Kotlin Blog" title="Kotlin Blog" xmlUrl="https://blog.jetbrains.com/kotlin/feed/"/>
@@ -95,6 +102,7 @@
       <outline type="rss" text="Netflix Tech Blog" title="Netflix Tech Blog" xmlUrl="https://netflixtechblog.com/feed"/>
       <outline type="rss" text="AWS Blog" title="AWS Blog" xmlUrl="https://aws.amazon.com/blogs/aws/feed/"/>
       <outline type="rss" text="Cloudflare Blog" title="Cloudflare Blog" xmlUrl="https://blog.cloudflare.com/rss/"/>
+      <outline type="rss" text="Google Developers" title="Google Developers" xmlUrl="https://developers.googleblog.com/feeds/posts/default/"/>
       <outline type="rss" text="Mozilla Hacks" title="Mozilla Hacks" xmlUrl="https://hacks.mozilla.org/feed/"/>
       <outline type="rss" text="Vercel Blog" title="Vercel Blog" xmlUrl="https://vercel.com/atom"/>
       <outline type="rss" text="Supabase Blog" title="Supabase Blog" xmlUrl="https://supabase.com/blog/rss.xml"/>

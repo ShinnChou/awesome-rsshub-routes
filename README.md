@@ -100,6 +100,8 @@ Built on Discourse with native RSS support.
 | Top Topics    | `https://linux.do/top.rss`    | Popular discussions     |
 | Latest Posts  | `https://linux.do/posts.rss`  | All new posts           |
 
+> Note: These feeds may require a proxy in some regions.
+
 #### V2EX
 
 | Name          | Feed URL                                     | Description      |
@@ -109,6 +111,8 @@ Built on Discourse with native RSS support.
 | Tech Node     | `https://www.v2ex.com/feed/tab/tech.xml`     | Tech discussions |
 | Creative Node | `https://www.v2ex.com/feed/tab/creative.xml` | Creative sharing |
 | Fun Node      | `https://www.v2ex.com/feed/tab/play.xml`     | Fun stuff        |
+
+> Note: These feeds may require a proxy in some regions.
 
 #### Hacker News
 
@@ -169,6 +173,8 @@ Cybersecurity, vulnerabilities, and threat intelligence.
 | Krebs on Security    | `https://krebsonsecurity.com/feed/`           | Renowned security blog |
 | The Hacker News      | `https://feeds.feedburner.com/TheHackersNews` | Hacking news           |
 | Schneier on Security | `https://www.schneier.com/feed/`              | Security expert blog   |
+| CISA News            | `https://www.cisa.gov/news.xml`               | US cyber alerts        |
+| Google Security Blog | `https://security.googleblog.com/atom.xml`    | Google security updates |
 | FreeBuf              | `https://www.freebuf.com/feed`                | Chinese security news  |
 | AnQuanKe             | `https://api.anquanke.com/data/v1/rss`        | Security tech news     |
 
@@ -182,6 +188,10 @@ Frontend development, UI/UX design resources.
 | A List Apart          | `https://alistapart.com/main/feed/`          | Web standards and design  |
 | Codrops               | `https://tympanus.net/codrops/feed/`         | Creative frontend effects |
 | CSS-Tricks            | `https://css-tricks.com/feed/`               | CSS tips and tutorials    |
+| Astro Blog            | `https://astro.build/rss.xml`                | Astro framework updates   |
+| Svelte Blog           | `https://svelte.dev/blog/rss.xml`            | Svelte and SvelteKit news |
+| Next.js Blog          | `https://nextjs.org/feed.xml`                | Next.js official updates  |
+| Nuxt Blog             | `https://nuxt.com/blog/rss.xml`              | Nuxt framework updates    |
 | Tailwind CSS Blog     | `https://tailwindcss.com/feeds/feed.xml`     | Tailwind CSS updates      |
 | Dev.to                | `https://dev.to/feed`                        | Developer community       |
 | Chrome Developer Blog | `https://developer.chrome.com/blog/feed.xml` | Chrome dev blog           |
@@ -200,6 +210,7 @@ Official blogs for programming languages and frameworks.
 | Go Blog         | `https://go.dev/blog/feed.atom`                   | Go official blog         |
 | Python Blog     | `https://blog.python.org/feeds/posts/default`     | Python official blog     |
 | Node.js Blog    | `https://nodejs.org/en/feed/blog.xml`             | Node.js official blog    |
+| Deno Blog       | `https://deno.com/blog/feed.xml`                  | Deno official blog       |
 | TypeScript Blog | `https://devblogs.microsoft.com/typescript/feed/` | TypeScript official blog |
 | Swift Blog      | `https://www.swift.org/atom.xml`                  | Swift official blog      |
 | Kotlin Blog     | `https://blog.jetbrains.com/kotlin/feed/`         | Kotlin official blog     |
@@ -214,6 +225,7 @@ Engineering blogs from major tech companies.
 | Netflix Tech Blog   | `https://netflixtechblog.com/feed`        | Netflix engineering    |
 | AWS Blog            | `https://aws.amazon.com/blogs/aws/feed/`  | AWS official blog      |
 | Cloudflare Blog     | `https://blog.cloudflare.com/rss/`        | Cloudflare engineering |
+| Google Developers   | `https://developers.googleblog.com/feeds/posts/default/` | Google developer blog |
 | Mozilla Hacks       | `https://hacks.mozilla.org/feed/`         | Mozilla developer blog |
 | Vercel Blog         | `https://vercel.com/atom`                 | Vercel official blog   |
 | Supabase Blog       | `https://supabase.com/blog/rss.xml`       | Supabase official blog |
@@ -388,7 +400,7 @@ Simply copy the feed URL into your RSS reader. No assembly required.
 | [Feedly](https://feedly.com/)           | Web            | Classic reader, free tier.   |
 | [Inoreader](https://www.inoreader.com/) | Web / App      | Feature-rich.                |
 | [NetNewsWire](https://netnewswire.com/) | macOS / iOS    | Native and free.             |
-| Fluent Reader                           | Cross-platform | Open-source and modern.      |
+| [Fluent Reader](https://github.com/yang991178/fluent-reader) | Cross-platform | Open-source and modern.      |
 | [Folo](https://folo.is/)                | Cross-platform | Next-gen with AI.            |
 | [FreshRSS](https://freshrss.org/)       | Self-hosted    | Open-source and self-hosted. |
 

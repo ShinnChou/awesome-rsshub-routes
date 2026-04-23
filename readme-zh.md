@@ -106,6 +106,7 @@
 
 > 💡 分类订阅：`https://linux.do/c/分类名/分类ID.rss`  
 > 💡 标签订阅：`https://linux.do/tag/标签名.rss`
+> 💡 部分地区访问这些订阅可能需要代理
 
 #### V2EX
 
@@ -116,6 +117,8 @@
 | 技术节点 | `https://www.v2ex.com/feed/tab/tech.xml` | 技术讨论 |
 | 创意节点 | `https://www.v2ex.com/feed/tab/creative.xml` | 创意分享 |
 | 好玩节点 | `https://www.v2ex.com/feed/tab/play.xml` | 好玩内容 |
+
+> 💡 部分地区访问这些订阅可能需要代理
 
 #### Hacker News
 
@@ -190,6 +193,8 @@
 | Krebs on Security | `https://krebsonsecurity.com/feed/` | 知名安全博客 |
 | The Hacker News | `https://feeds.feedburner.com/TheHackersNews` | 黑客新闻 |
 | Schneier on Security | `https://www.schneier.com/feed/` | 安全专家博客 |
+| CISA News | `https://www.cisa.gov/news.xml` | 美国网络安全预警 |
+| Google Security Blog | `https://security.googleblog.com/atom.xml` | Google 安全更新 |
 | FreeBuf | `https://www.freebuf.com/feed` | 国内安全资讯 |
 | 安全客 | `https://api.anquanke.com/data/v1/rss` | 安全技术资讯 |
 
@@ -205,6 +210,10 @@
 | A List Apart | `https://alistapart.com/main/feed/` | Web 标准与设计 |
 | Codrops | `https://tympanus.net/codrops/feed/` | 创意前端效果 |
 | CSS-Tricks | `https://css-tricks.com/feed/` | CSS 技巧教程 |
+| Astro Blog | `https://astro.build/rss.xml` | Astro 框架动态 |
+| Svelte Blog | `https://svelte.dev/blog/rss.xml` | Svelte / SvelteKit 更新 |
+| Next.js Blog | `https://nextjs.org/feed.xml` | Next.js 官方动态 |
+| Nuxt Blog | `https://nuxt.com/blog/rss.xml` | Nuxt 框架更新 |
 | Tailwind CSS Blog | `https://tailwindcss.com/feeds/feed.xml` | Tailwind CSS 更新 |
 | Dev.to | `https://dev.to/feed` | 开发者社区 |
 | Chrome Developer Blog | `https://developer.chrome.com/blog/feed.xml` | Chrome 开发博客 |
@@ -230,6 +239,7 @@
 | Go Blog | `https://go.dev/blog/feed.atom` | Go 官方博客 |
 | Python Blog | `https://blog.python.org/feeds/posts/default` | Python 官方博客 |
 | Node.js Blog | `https://nodejs.org/en/feed/blog.xml` | Node.js 官方博客 |
+| Deno Blog | `https://deno.com/blog/feed.xml` | Deno 官方博客 |
 | TypeScript Blog | `https://devblogs.microsoft.com/typescript/feed/` | TypeScript 官方博客 |
 | Swift Blog | `https://www.swift.org/atom.xml` | Swift 官方博客 |
 | Kotlin Blog | `https://blog.jetbrains.com/kotlin/feed/` | Kotlin 官方博客 |
@@ -246,6 +256,7 @@
 | Netflix Tech Blog | `https://netflixtechblog.com/feed` | Netflix 技术博客 |
 | AWS Blog | `https://aws.amazon.com/blogs/aws/feed/` | AWS 官方博客 |
 | Cloudflare Blog | `https://blog.cloudflare.com/rss/` | Cloudflare 技术博客 |
+| Google Developers | `https://developers.googleblog.com/feeds/posts/default/` | Google 开发者博客 |
 | Mozilla Hacks | `https://hacks.mozilla.org/feed/` | Mozilla 开发者博客 |
 | Vercel Blog | `https://vercel.com/atom` | Vercel 官方博客 |
 | Supabase Blog | `https://supabase.com/blog/rss.xml` | Supabase 官方博客 |

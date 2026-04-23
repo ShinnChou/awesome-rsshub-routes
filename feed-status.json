@@ -1,7 +1,7 @@
 {
-  "checkTime": "2026-04-20 11:07:52 (北京时间)",
-  "total": 75,
-  "valid": 75,
+  "checkTime": "2026-04-23 10:32:01 (北京时间)",
+  "total": 83,
+  "valid": 83,
   "invalid": 0,
   "successRate": "100.0%",
   "feeds": [
@@ -121,28 +121,28 @@
       "name": "LinuxDo 最新话题",
       "url": "https://linux.do/latest.rss",
       "valid": true,
-      "statusCode": 200,
+      "statusCode": null,
       "error": null
     },
     {
       "name": "LinuxDo 热门话题",
       "url": "https://linux.do/top.rss",
       "valid": true,
-      "statusCode": 200,
+      "statusCode": null,
       "error": null
     },
     {
       "name": "V2EX 最热",
       "url": "https://www.v2ex.com/feed/tab/hot.xml",
       "valid": true,
-      "statusCode": 200,
+      "statusCode": null,
       "error": null
     },
     {
       "name": "V2EX 技术",
       "url": "https://www.v2ex.com/feed/tab/tech.xml",
       "valid": true,
-      "statusCode": 200,
+      "statusCode": null,
       "error": null
     },
     {
@@ -184,7 +184,7 @@
       "name": "阮一峰的网络日志",
       "url": "https://www.ruanyifeng.com/blog/atom.xml",
       "valid": true,
-      "statusCode": 403,
+      "statusCode": 200,
       "error": null
     },
     {
@@ -251,6 +251,20 @@
       "error": null
     },
     {
+      "name": "CISA News",
+      "url": "https://www.cisa.gov/news.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Google Security Blog",
+      "url": "https://security.googleblog.com/atom.xml",
+      "valid": true,
+      "statusCode": 302,
+      "error": null
+    },
+    {
       "name": "FreeBuf",
       "url": "https://www.freebuf.com/feed",
       "valid": true,
@@ -288,6 +302,34 @@
     {
       "name": "CSS-Tricks",
       "url": "https://css-tricks.com/feed/",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Astro Blog",
+      "url": "https://astro.build/rss.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Svelte Blog",
+      "url": "https://svelte.dev/blog/rss.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Next.js Blog",
+      "url": "https://nextjs.org/feed.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Nuxt Blog",
+      "url": "https://nuxt.com/blog/rss.xml",
       "valid": true,
       "statusCode": 200,
       "error": null
@@ -370,6 +412,13 @@
       "error": null
     },
     {
+      "name": "Deno Blog",
+      "url": "https://deno.com/blog/feed.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
       "name": "TypeScript Blog",
       "url": "https://devblogs.microsoft.com/typescript/feed/",
       "valid": true,
@@ -414,6 +463,13 @@
     {
       "name": "Cloudflare Blog",
       "url": "https://blog.cloudflare.com/rss/",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "Google Developers",
+      "url": "https://developers.googleblog.com/feeds/posts/default/",
       "valid": true,
       "statusCode": 200,
       "error": null
