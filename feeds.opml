@@ -105,7 +105,7 @@
       <outline type="rss" text="Google Developers" title="Google Developers" xmlUrl="https://developers.googleblog.com/feeds/posts/default/"/>
       <outline type="rss" text="Mozilla Hacks" title="Mozilla Hacks" xmlUrl="https://hacks.mozilla.org/feed/"/>
       <outline type="rss" text="Vercel Blog" title="Vercel Blog" xmlUrl="https://vercel.com/atom"/>
-      <outline type="rss" text="Supabase Blog" title="Supabase Blog" xmlUrl="https://supabase.com/blog/rss.xml"/>
+      <outline type="rss" text="Supabase Blog" title="Supabase Blog" xmlUrl="https://supabase.com/rss.xml"/>
       <outline type="rss" text="Stripe Blog" title="Stripe Blog" xmlUrl="https://stripe.com/blog/feed.rss"/>
       <outline type="rss" text="Spotify Engineering" title="Spotify Engineering" xmlUrl="https://engineering.atspotify.com/feed/"/>
       <outline type="rss" text="Meta Engineering" title="Meta Engineering" xmlUrl="https://engineering.fb.com/feed/"/>

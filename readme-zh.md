@@ -259,7 +259,7 @@
 | Google Developers | `https://developers.googleblog.com/feeds/posts/default/` | Google 开发者博客 |
 | Mozilla Hacks | `https://hacks.mozilla.org/feed/` | Mozilla 开发者博客 |
 | Vercel Blog | `https://vercel.com/atom` | Vercel 官方博客 |
-| Supabase Blog | `https://supabase.com/blog/rss.xml` | Supabase 官方博客 |
+| Supabase Blog | `https://supabase.com/rss.xml` | Supabase 官方博客 |
 | Stripe Blog | `https://stripe.com/blog/feed.rss` | Stripe 技术博客 |
 | Spotify Engineering | `https://engineering.atspotify.com/feed/` | Spotify 技术博客 |
 | Meta Engineering | `https://engineering.fb.com/feed/` | Meta/Facebook 技术博客 |

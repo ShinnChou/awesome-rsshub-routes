@@ -228,7 +228,7 @@ Engineering blogs from major tech companies.
 | Google Developers   | `https://developers.googleblog.com/feeds/posts/default/` | Google developer blog |
 | Mozilla Hacks       | `https://hacks.mozilla.org/feed/`         | Mozilla developer blog |
 | Vercel Blog         | `https://vercel.com/atom`                 | Vercel official blog   |
-| Supabase Blog       | `https://supabase.com/blog/rss.xml`       | Supabase official blog |
+| Supabase Blog       | `https://supabase.com/rss.xml`            | Supabase official blog |
 | Stripe Blog         | `https://stripe.com/blog/feed.rss`        | Stripe engineering     |
 | Spotify Engineering | `https://engineering.atspotify.com/feed/` | Spotify engineering    |
 | Meta Engineering    | `https://engineering.fb.com/feed/`        | Meta/Facebook engineering |

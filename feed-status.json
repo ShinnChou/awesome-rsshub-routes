@@ -490,10 +490,10 @@
     },
     {
       "name": "Supabase Blog",
-      "url": "https://supabase.com/blog/rss.xml",
-      "valid": false,
-      "statusCode": 404,
-      "error": "HTTP 404"
+      "url": "https://supabase.com/rss.xml",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
     },
     {
       "name": "Stripe Blog",
